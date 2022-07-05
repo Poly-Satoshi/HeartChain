@@ -1,5 +1,9 @@
 # This is a basic workflow to help you get started with Actions
-
+# - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 name: CI
 # run production CI no errors
 # Controls when the workflow will run
